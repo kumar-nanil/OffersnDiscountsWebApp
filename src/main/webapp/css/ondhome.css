@@ -1,0 +1,13 @@
+.handpicked-img {
+    display: block;
+    max-width:230px;
+    max-height:95px;
+    width: 100px;
+    height: 60px;
+}
+
+.love-img {
+    display: block;
+    width: 20px;
+    height: 50px;
+}

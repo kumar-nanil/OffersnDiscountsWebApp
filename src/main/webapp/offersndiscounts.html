@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Offers n Discounts</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/homepage.css" media="all">
+</head>
+<body>
+
+<!-- *****************Header to Background ************************-->
+<div id="topheader" class="container_12">
+    <div class="grid_12 clearfix">
+        <div class="grid_3 alpha">
+            <!--Offers n Discounts-->
+            <img id="logo" alt="Offers.com"
+                 src="image/offersndiscounts.svg">
+        </div>
+        <div class="grid_6" id="search">
+            <form action="http://www.offers.com/search/" method="GET">
+                <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                <input id="q" name="query" placeholder="Find your favorite stores, brands &amp; categories"
+                       title="Find your favorite stores, brands &amp; categories" class="ui-autocomplete-input"
+                       autocomplete="off">
+                <button type="submit"><i class="icon-search"></i></button>
+            </form>
+        </div>
+        <div id="user-status" class="grid_3 omega">
+            <span id="login-signup">
+            <a href="http://www.offers.com/#login=1"><i class="icon-heart"></i>Log In</a>
+                or<a id="header-signup" href="http://www.offers.com/#signup=1">Sign Up</a>
+            </span>
+        </div>
+    </div>
+</div>
+<div id="main-navigation">
+    <div class="container_12">
+        <div class="grid_9">
+                <span class="dolphin has-dropdown">
+                <a href="http://www.offers.com/">Today's Best <i class="icon-angle-down"></i></a>
+                <ul class="dropdown dolphin">
+                    <li><a href="http://www.offers.com/deals/">Product Deals</a></li>
+                    <li><a href="http://www.offers.com/coupon-codes/">Coupon Codes</a></li>
+                    <li><a href="http://www.offers.com/exclusives/">Exclusives</a></li>
+                    <li><a href="http://www.offers.com/free/">Free</a></li>
+                    <li><a href="http://www.offers.com/c/fast-food/">Fast Food</a></li>
+                    <li><a href="http://www.offers.com/collections/">Collections</a></li>
+                    <hr>
+                    <li><a href="http://www.offers.com/about/types-offers/">Types of Offers</a></li>
+                </ul>
+                </span>
+                <span class="dolphin has-dropdown">
+                <a href="http://www.offers.com/stores/">Stores &amp; Brands</a>
+                </span>
+                <span class="dolphin has-dropdown">
+                <a href="http://www.offers.com/categories/">Mobile</i></a>
+                <ul class="dropdown dolphin">
+                    <li><a href="http://www.offers.com/c/automotive/">Recharges and Bill Pay</a></li>
+                    <!--<li><a href="http://www.offers.com/c/clothing/">Clothing &amp; Accessories</a></li>-->
+                    <!--<li><a href="https://creditcards.offers.com/">Credit Cards</a></li>-->
+                    <!--<li><a href="http://www.offers.com/c/electronics/">Electronics</a></li>-->
+                    <!--<li><a href="http://www.offers.com/c/home/">Home &amp; Garden</a></li>-->
+                    <!--<li><a href="http://www.offers.com/c/restaurants/">Restaurants &amp; Dining</a></li>-->
+                    <!--<li><a href="http://www.offers.com/c/travel/">Travel</a></li>-->
+                    <hr>
+                    <li><a href="http://www.offers.com/c/">All Categories</a></li>
+                </ul>
+                </span>
+            <!--<span class="dolphin has-dropdown">-->
+            <!--<a href="http://www.offers.com/categories/">Categories <i class="icon-angle-down"></i></a>-->
+            <!--<ul class="dropdown dolphin">-->
+            <!--<li><a href="http://www.offers.com/c/automotive/">Automotive</a></li>-->
+            <!--<li><a href="http://www.offers.com/c/clothing/">Clothing &amp; Accessories</a></li>-->
+            <!--<li><a href="https://creditcards.offers.com/">Credit Cards</a></li>-->
+            <!--<li><a href="http://www.offers.com/c/electronics/">Electronics</a></li>-->
+            <!--<li><a href="http://www.offers.com/c/home/">Home &amp; Garden</a></li>-->
+            <!--<li><a href="http://www.offers.com/c/restaurants/">Restaurants &amp; Dining</a></li>-->
+            <!--<li><a href="http://www.offers.com/c/travel/">Travel</a></li>-->
+            <!--<hr>-->
+            <!--<li><a href="http://www.offers.com/c/">All Categories</a></li>-->
+            <!--</ul>-->
+            <!--</span>-->
+                <span class="dolphin has-dropdown omega">
+                <a href="http://www.offers.com/blog/">Savings Tips <i class="icon-angle-down"></i></a>
+                <ul class="dropdown dolphin">
+                    <li><a href="http://www.offers.com/addoffer/">Add an Offer</a></li>
+                    <li><a href="http://www.offers.com/about/browser-addon/">Browser Extension</a></li>
+                    <li><a href="http://www.offers.com/about/newsletter/#subscribe=1">Email Alerts</a></li>
+                    <li><a href="http://www.offers.com/about/app/">Mobile App</a></li>
+                    <li><a href="http://www.offers.com/blog/">Savings Tips Blog</a></li>
+                    <li><a href="http://www.offers.com/about/">About Offers.com</a></li>
+                </ul>
+                </span>
+        </div>
+        <!--<div id="header-holidays" class="grid_3">-->
+        <!--<a href="http://www.offers.com/back-to-school/">-->
+        <!--<img src="./Offers.com_ Today&#39;s Best Coupons, Promo Codes &amp; Deals_files/517.r428.png"-->
+        <!--alt="Back to School Sales">-->
+        <!--</a>-->
+        <!--</div>-->
+    </div>
+</div>
+<!-- *****************Comment Ends ************************-->
+
+<div id="offer-set" class="container_12">
+    <div class="grid_12">
+        <h3>Today's Best Offers <a class="view-all" href="http://www.offers.com/top-offers/?hot=1">(view all)</a>
+        </h3>
+        <div id="todays-best" class="tile-slider-container " data-max-width="3824" data-curr-offset="0"
+             data-tile-type="offer"
+             data-extra-tiles="4160251,4190772,4190767,4190766,4190753,4190742,4190715,4190710,4190678,4190655,4190653"
+             data-total-tiles="16">
+            <i class="icon-angle-left left slider-control"></i><i
+                class="icon-angle-right right slider-control active"></i>
+            <div class="clearfix tile-container" style="width: 3824px;">
+                <div class="offer-tile tile grid_3 offer-info alpha" data-offer-id="4190998">
+                    <div class="handle "></div>
+                    <div class="banner orange-banner ">hot</div>
+                    <div class="dolphin sticker">
+                        <p>54%</p>
+                        <p class="last">OFF</p>
+                    </div>
+                    <div class="offer-image">
+                        <img class="offer-modal-link"
+                             src="./Offers.com_ Today&#39;s Best Coupons, Promo Codes &amp; Deals_files/4190998.p.w220.h200.r3.jpg"
+                             alt="54% off Samsung 40" led="" 1080p="" hdtv="" +="" free="" shipping="" from="" abt"="">
+
+                    </div>
+
+                    <div class="offer-info">
+                        <p class="company-line">
+                            From: <a title="Abt" href="http://www.offers.com/abt-electronics/"><strong>Abt</strong></a>
+                        </p>
+
+                        <p class="offer">
+                                <span class="offer-modal-link"><span class="savings">54% off</span> Samsung 40" LED 1080p HDTV + <span
+                                        class="savings">Free Shipping</span></span>
+                        </p>
+
+                        <div class="more-section clearfix">
+                                    <span class="verified">
+                        Added just now by johnnyg                    </span>
+                        </div>
+                    </div>
+
+                    <div class="buy-section">
+                        <div class="alternate-pricing">
+                        </div>
+
+                        <div class="price-line clearfix">
+                                    <span class="offer-pricing">
+                                                    <span class="original-price">$549.99</span>
+                            <span class="sale-price">$247.99</span>
+                                            </span>
+
+                            <span class="free-shipping">Free Shipping</span>
+                        </div>
+
+
+                        <div class="buy">
+
+                            <div class="buy-button button-outer  " data-html="false" data-offerid="4190998"
+                                 data-printable="0" data-simple="0" data-single-use="0">
+                                <a rel="nofollow" target="_blank" class="track-position btn btn-green   "
+                                   href="http://www.offers.com/exit/outbound/offer_id/4190998/ld/offer_tile/c/index/a/index/vb/1541482530708260483/">
+                                    Get Offer </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="actions clearfix">
+
+                            <span class="button save-container">
+                        <span class="save-button"
+                              data-message="4190998|27|save&amp;e8ad40d91fcfdf41b1cf3da7d51db008bb36a8aeecffc3c185863f9c4eb6575a"
+                              data-disabled="false">
+        SAVE
+    </span>
+                </span>
+
+             <span class="button">
+                <i class="icon-envelope-alt email-button" data-source="tile" data-offer-id="4190998"></i>
+            </span>
+
+            <span class="button">
+                <i class="icon-mobile-phone sms-button" data-source="tile" data-offer-id="4190998"></i>
+            </span>
+                    </div>
+                </div>
+                <div class="offer-tile tile grid_3 offer-info " data-offer-id="4181097">
+                    <div class="handle "></div>
+
+                    <div class="banner orange-banner ">hot</div>
+
+
+                    <div class="offer-image">
+                        <img class="offer-modal-link"
+                             src="./Offers.com_ Today&#39;s Best Coupons, Promo Codes &amp; Deals_files/c7838.p.w220.h200.r20.png"
+                             alt="Kids Eat Free for the Summer from IHOP">
+
+                    </div>
+
+                    <div class="offer-info">
+                        <p class="company-line">
+                            From: <a title="IHOP" href="http://www.offers.com/ihop/"><strong>IHOP</strong></a>
+                        </p>
+
+                        <p class="offer">
+                            <span class="offer-modal-link">Kids Eat Free for the Summer</span>
+                        </p>
+
+                        <div class="more-section clearfix">
+                                    <span class="verified">
+                        Added 1 hour ago by frugalfran7                    </span>
+                        </div>
+                    </div>
+
+                    <div class="buy-section">
+                        <div class="alternate-pricing">
+                        </div>
+
+                        <div class="price-line clearfix">
+                        </div>
+
+
+                        <div class="buy">
+
+                            <div class="buy-button button-outer  noncom" data-html="false" data-offerid="4181097"
+                                 data-printable="0" data-simple="0" data-single-use="0">
+                                <a rel="nofollow" target="_blank" class="track-position btn btn-green   "
+                                   href="http://www.offers.com/exit/outbound/offer_id/4181097/ld/offer_tile/c/index/a/index/vb/1541482530708260483/">
+                                    Get Offer </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="actions clearfix">
+                        <a class="more-details offer-modal-link">More Details</a>
+
+                            <span class="button save-container">
+                        <span class="save-button"
+                              data-message="4181097|27|save&amp;e26d751d89e1d49b0ff3d31dd891d15d3bd52283fd356f8535a45e52cff77dcc"
+                              data-disabled="false">
+        SAVE
+    </span>
+                </span>
+
+             <span class="button">
+                <i class="icon-envelope-alt email-button" data-source="tile" data-offer-id="4181097"></i>
+            </span>
+
+            <span class="button">
+                <i class="icon-mobile-phone sms-button" data-source="tile" data-offer-id="4181097"></i>
+            </span>
+                    </div>
+                </div>
+                <div class="offer-tile tile grid_3 offer-info " data-offer-id="4190815">
+                    <div class="handle "></div>
+
+                    <div class="banner orange-banner ">hot</div>
+
+                    <div class="dolphin sticker">
+                        <p>17%</p>
+                        <p class="last">OFF</p>
+                    </div>
+
+                    <div class="offer-image">
+                        <img class="offer-modal-link"
+                             src="./Offers.com_ Today&#39;s Best Coupons, Promo Codes &amp; Deals_files/4190815.p.w220.h200.r3.jpg"
+                             alt="$100 off Lenovo Z50 Laptop + Free Shipping from Microsoft Store">
+
+                        <div class="brand-image offer-modal-link">
+                            <img src="./Offers.com_ Today&#39;s Best Coupons, Promo Codes &amp; Deals_files/575.p.w60.h35.r1.gif"
+                                 alt="View All Lenovo Coupons">
+                        </div>
+                    </div>
+
+                    <div class="offer-info">
+                        <p class="company-line">
+                            From: <a title="Microsoft Store" href="http://www.offers.com/microsoft/"><strong>Microsoft
+                            Store</strong></a>
+                        </p>
+
+                        <p class="offer">
+                                <span class="offer-modal-link"><span class="savings">$100 off</span> Lenovo Z50 Laptop + <span
+                                        class="savings">Free Shipping</span></span>
+                        </p>
+
+                        <div class="more-section clearfix">
+                                    <span class="verified">
+                        Added 2 hours ago by johnnyg                    </span>
+                        </div>
+                    </div>
+
+                    <div class="buy-section">
+                        <div class="alternate-pricing">
+                        </div>
+
+                        <div class="price-line clearfix">
+                                    <span class="offer-pricing">
+                                                    <span class="original-price">$599.00</span>
+                            <span class="sale-price">$499.00</span>
+                                            </span>
+
+                        </div>
+
+
+                        <div class="buy">
+
+                            <div class="buy-button button-outer  " data-html="false" data-offerid="4190815"
+                                 data-printable="0" data-simple="0" data-single-use="0">
+                                <a rel="nofollow" target="_blank" class="track-position btn btn-green   "
+                                   href="http://www.offers.com/exit/outbound/offer_id/4190815/ld/offer_tile/c/index/a/index/vb/1541482530708260483/">
+                                    Get Deal </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="actions clearfix">
+
+                            <span class="button save-container">
+                        <span class="save-button"
+                              data-message="4190815|27|save&amp;9de83af80a33667710c40b03f0a573da02260a6cd917760c0dfedd412590bc6f"
+                              data-disabled="false">
+        SAVE
+    </span>
+                </span>
+
+             <span class="button">
+                <i class="icon-envelope-alt email-button" data-source="tile" data-offer-id="4190815"></i>
+            </span>
+
+            <span class="button">
+                <i class="icon-mobile-phone sms-button" data-source="tile" data-offer-id="4190815"></i>
+            </span>
+                    </div>
+                </div>
+                <div class="offer-tile tile grid_3 offer-info " data-offer-id="4179783">
+                    <div class="handle "></div>
+
+                    <div class="banner orange-banner ">hot</div>
+
+                    <div class="dolphin sticker">
+                        <p>50%</p>
+                        <p class="last">OFF</p>
+                    </div>
+
+                    <div class="offer-image">
+                        <img class="offer-modal-link"
+                             src="./Offers.com_ Today&#39;s Best Coupons, Promo Codes &amp; Deals_files/4179783.p.w220.h200.r5.jpg"
+                             alt="Up to 50% off Outdoor Furniture from Pier 1 Imports">
+
+                    </div>
+
+                    <div class="offer-info">
+                        <p class="company-line">
+                            From: <a title="Pier 1 Imports" href="http://www.offers.com/pier-1/"><strong>Pier 1
+                            Imports</strong></a>
+                        </p>
+
+                        <p class="offer">
+                            <span class="offer-modal-link">Up to <span class="savings">50% off</span> Outdoor Furniture</span>
+                        </p>
+
+                        <div class="more-section clearfix">
+                                    <span class="verified">
+                        Added 2 hours ago by julia                    </span>
+                        </div>
+                    </div>
+
+                    <div class="buy-section">
+                        <div class="alternate-pricing">
+                        </div>
+
+                        <div class="price-line clearfix">
+                        </div>
+
+
+                        <div class="buy">
+
+                            <div class="buy-button button-outer  " data-html="false" data-offerid="4179783"
+                                 data-printable="0" data-simple="0" data-single-use="0">
+                                <a rel="nofollow" target="_blank" class="track-position btn btn-green   "
+                                   href="http://www.offers.com/exit/outbound/offer_id/4179783/ld/offer_tile/c/index/a/index/vb/1541482530708260483/">
+                                    Get Offer </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="actions clearfix">
+
+                            <span class="button save-container">
+                        <span class="save-button"
+                              data-message="4179783|27|save&amp;6e4a912dfd3204468a71c9f41edf4891d53c4c0f28f90f27cc70dd7a10fd515d"
+                              data-disabled="false">
+        SAVE
+    </span>
+                </span>
+
+             <span class="button">
+                <i class="icon-envelope-alt email-button" data-source="tile" data-offer-id="4179783"></i>
+            </span>
+
+            <span class="button">
+                <i class="icon-mobile-phone sms-button" data-source="tile" data-offer-id="4179783"></i>
+            </span>
+                    </div>
+                </div>
+
+                <div class="content-tile tile grid_3 jump-tile omega">
+                    <div class="content">
+                        <p><a href="http://www.offers.com/top-offers/?hot=1">View All Today's Best Offers <i
+                                class="icon-angle-right"></i></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="email-updates email-validate">
+            <h3>Get Today's Top Offers</h3>
+
+
+            <form class="dolphin" novalidate="novalidate">
+                <input type="hidden" name="token"
+                       value="email-signup|7dea59164f0a96e4405162d437bdf65f3544cd09|1470075898&amp;59874b285bce76488b103a2ebe02c2177c0ec21ca84b5a66dfa479c7c3650871">
+                <input type="hidden" class="subscribe-val" data-fave="">
+
+                <div class="inline-with-button">
+                    <input type="email" name="email" placeholder="Enter your email address" value=""
+                           title="Enter your email address">
+                    <button class="btn btn-teal small">Sign Up</button>
+                </div>
+                <p class="privacy">By signing up, you agree to Offers.com <a target="_blank"
+                                                                             href="https://www.ziffdavis.com/terms-of-use">terms
+                    of service</a> and <a target="_blank" href="https://www.ziffdavis.com/privacy-policy">privacy
+                    policy</a></p>
+
+                <input type="hidden" name="source_descriptor" value="13">
+                <input type="hidden" name="buoy" value="1541482530708260483">
+
+                <p class="emailupdates-invalid-email">Invalid email. Please try again.</p>
+            </form>
+        </div>
+        <div class="homepage-slider">
+            <div class="offer-group">
+                <h3>Food Deals &amp; Freebies <a class="view-all" href="http://www.offers.com/c/fast-food/">(view
+                    all)</a></h3>
+
+                <div id="group-281" class="tile-slider-container " data-max-width="3824" data-curr-offset="0"
+                     data-tile-type="offer"
+                     data-extra-tiles="4154291,3744423,2726770,4094888,3753788,4178358,2257584,836585,3166119,2257582,3732542"
+                     data-total-tiles="16">
+                    <i class="icon-angle-left left slider-control"></i><i
+                        class="icon-angle-right right slider-control active"></i>
+
+                    <div class="clearfix tile-container" style="width: 3824px;">
+                        <div class="offer-tile tile grid_3 offer-info alpha" data-offer-id="4154222">
+                            <div class="handle "></div>
+
+
+                            <div class="offer-image">
+                                <img class="offer-modal-link"
+                                     src="./Offers.com_ Today&#39;s Best Coupons, Promo Codes &amp; Deals_files/4154222.p.w220.h200.r4.jpg"
+                                     alt="Free Singapore Firecracker Chicken or Long Life Noodles &amp; Prawn from P.F. Chang&#39;s">
+
+                            </div>
+
+                            <div class="offer-info">
+                                <p class="company-line">
+                                    From: <a title="P.F. Chang&#39;s"
+                                             href="http://www.offers.com/pf-changs/"><strong>P.F.
+                                    Chang's</strong></a>
+                                </p>
+
+                                <p class="offer">
+                                    <span class="offer-modal-link">Free Singapore Firecracker Chicken or Long Life Noodles &amp;...</span>
+                                </p>
+
+                                <div class="more-section clearfix">
+                                    <span class="verified">
+                        Added on 7/18/16 by frugalfran7                    </span>
+                                </div>
+                            </div>
+
+                            <div class="buy-section">
+                                <div class="alternate-pricing">
+                                </div>
+
+                                <div class="price-line clearfix">
+                                </div>
+
+
+                                <div class="buy">
+
+                                    <div class="buy-button button-outer  noncom" data-html="false"
+                                         data-offerid="4154222" data-printable="1" data-simple="0"
+                                         data-single-use="0">
+                                        <a rel="nofollow" target="_blank" class="track-position btn btn-green   "
+                                           href="http://www.offers.com/exit/outbound/offer_id/4154222/ld/offer_tile/c/index/a/index/vb/1541482530708260483/">
+                                            Print Coupon </a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="actions clearfix">
+                                <a class="more-details offer-modal-link">More Details</a>
+
+                            <span class="button save-container">
+                        <span class="save-button"
+                              data-message="4154222|27|save&amp;b1abef95c16db536da8b46a4e2d47feb28eb65996b92c60a0ff48d34d2660475"
+                              data-disabled="false">
+        SAVE
+    </span>
+                </span>
+
+             <span class="button">
+                <i class="icon-envelope-alt email-button" data-source="tile" data-offer-id="4154222"></i>
+            </span>
+
+            <span class="button">
+                <i class="icon-mobile-phone sms-button" data-source="tile" data-offer-id="4154222"></i>
+            </span>
+                            </div>
+                        </div>
+                        <div class="offer-tile tile grid_3 offer-info " data-offer-id="4190317">
+                            <div class="handle "></div>
+
+                            <div class="banner  ">today only</div>
+
+                            <div class="dolphin sticker">
+                                <p>40%</p>
+                                <p class="last">OFF</p>
+                            </div>
+
+                            <div class="offer-image">
+                                <img class="offer-modal-link"
+                                     src="./Offers.com_ Today&#39;s Best Coupons, Promo Codes &amp; Deals_files/4190317.p.w220.h200.r4.jpg"
+                                     alt="40% off any Pizza from Papa John&#39;s">
+
+                            </div>
+
+                            <div class="offer-info">
+                                <p class="company-line">
+                                    From: <a title="Papa John&#39;s"
+                                             href="http://www.offers.com/papajohns/"><strong>Papa
+                                    John's</strong></a>
+                                </p>
+
+                                <p class="offer">
+                                        <span class="offer-modal-link"><span
+                                                class="savings">40% off</span> any Pizza</span>
+                                </p>
+
+                                <div class="more-section clearfix">
+                                    <span class="verified">
+                        Added 31 mins ago by frugalfran7                    </span>
+                                </div>
+                            </div>
+
+                            <div class="buy-section">
+                                <div class="alternate-pricing">
+                                </div>
+
+                                <div class="price-line clearfix">
+                                </div>
+
+
+                                <div class="buy">
+
+                                    <div class="buy-button button-outer code noncom" data-html="false"
+                                         data-offerid="4190317" data-printable="0" data-simple="0"
+                                         data-single-use="0">
+                                        <a rel="nofollow" target="_blank"
+                                           class="track-position btn btn-green  code "
+                                           href="http://www.offers.com/exit/outbound/offer_id/4190317/ld/offer_tile/c/index/a/index/vb/1541482530708260483/">
+                                            <div class="button-text">
+                                                Reveal Code
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="actions clearfix">
+                                <a class="more-details offer-modal-link">More Details</a>
+
+                            <span class="button save-container">
+                        <span class="save-button"
+                              data-message="4190317|27|save&amp;d375ee8412970b5932cdde09a6d61c2b28213db45e6f1677d9b39373da8772f3"
+                              data-disabled="false">
+        SAVE
+    </span>
+                </span>
+
+             <span class="button">
+                <i class="icon-envelope-alt email-button" data-source="tile" data-offer-id="4190317"></i>
+            </span>
+
+            <span class="button">
+                <i class="icon-mobile-phone sms-button" data-source="tile" data-offer-id="4190317"></i>
+            </span>
+                            </div>
+                        </div>
+                        <div class="offer-tile tile grid_3 offer-info " data-offer-id="4166273">
+                            <div class="handle "></div>
+
+                            <div class="banner orange-banner ">hot</div>
+
+
+                            <div class="offer-image">
+                                <img class="offer-modal-link"
+                                     src="./Offers.com_ Today&#39;s Best Coupons, Promo Codes &amp; Deals_files/4166273.p.w220.h200.r4.jpg"
+                                     alt="Free Root Beer Float Day - August 6th from A&amp;W">
+
+                            </div>
+
+                            <div class="offer-info">
+                                <p class="company-line">
+                                    From: <a title="A&amp;W"
+                                             href="http://www.offers.com/aw/"><strong>A&amp;W</strong></a>
+                                </p>
+
+                                <p class="offer">
+                                    <span class="offer-modal-link">Free Root Beer Float Day - August 6th</span>
+                                </p>
+
+                                <div class="more-section clearfix">
+                                    <span class="verified">
+                        Added on 7/22/16 by frugalfran7                    </span>
+                                </div>
+                            </div>
+
+                            <div class="buy-section">
+                                <div class="alternate-pricing">
+                                </div>
+
+                                <div class="price-line clearfix">
+                                    <span class="offer-pricing">
+                                                    <span class="sale-price">FREE</span>
+                                            </span>
+
+                                </div>
+
+
+                                <div class="buy">
+
+                                    <div class="buy-button button-outer  noncom" data-html="false"
+                                         data-offerid="4166273" data-printable="0" data-simple="0"
+                                         data-single-use="0">
+                                        <a rel="nofollow" target="_blank" class="track-position btn btn-green   "
+                                           href="http://www.offers.com/exit/outbound/offer_id/4166273/ld/offer_tile/c/index/a/index/vb/1541482530708260483/">
+                                            Get Offer </a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="actions clearfix">
+                                <a class="more-details offer-modal-link">More Details</a>
+
+                            <span class="button save-container">
+                        <span class="save-button"
+                              data-message="4166273|27|save&amp;cb0f2a36b83e844b0bf3db42b78f369ecda076c2c0a4c765e5d68915842bee5b"
+                              data-disabled="false">
+        SAVE
+    </span>
+                </span>
+
+             <span class="button">
+                <i class="icon-envelope-alt email-button" data-source="tile" data-offer-id="4166273"></i>
+            </span>
+
+            <span class="button">
+                <i class="icon-mobile-phone sms-button" data-source="tile" data-offer-id="4166273"></i>
+            </span>
+                            </div>
+                        </div>
+                        <div class="offer-tile tile grid_3 offer-info " data-offer-id="4138068">
+                            <div class="handle "></div>
+
+                            <div class="banner orange-banner ">hot</div>
+
+
+                            <div class="offer-image">
+                                <img class="offer-modal-link"
+                                     src="./Offers.com_ Today&#39;s Best Coupons, Promo Codes &amp; Deals_files/4138068.p.w220.h200.r5.jpg"
+                                     alt="3 for Me $10 Dinner Deal from Chili&#39;s">
+
+                            </div>
+
+                            <div class="offer-info">
+                                <p class="company-line">
+                                    From: <a title="Chili&#39;s" href="http://www.offers.com/chilis/"><strong>Chili's</strong></a>
+                                </p>
+
+                                <p class="offer">
+                                    <span class="offer-modal-link">3 for Me $10 Dinner Deal</span>
+                                </p>
+
+                                <div class="more-section clearfix">
+                                    <span class="verified">
+                        Added 4 days ago by frugalfran7                    </span>
+                                </div>
+                            </div>
+
+                            <div class="buy-section">
+                                <div class="alternate-pricing">
+                                </div>
+
+                                <div class="price-line clearfix">
+                                    <span class="offer-pricing">
+                                                    <span class="sale-price">$10.00</span>
+                                            </span>
+
+                                </div>
+
+
+                                <div class="buy">
+
+                                    <div class="buy-button button-outer  noncom" data-html="false"
+                                         data-offerid="4138068" data-printable="0" data-simple="0"
+                                         data-single-use="0">
+                                        <a rel="nofollow" target="_blank" class="track-position btn btn-green   "
+                                           href="http://www.offers.com/exit/outbound/offer_id/4138068/ld/offer_tile/c/index/a/index/vb/1541482530708260483/">
+                                            Get Deal </a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="actions clearfix">
+                                <a class="more-details offer-modal-link">More Details</a>
+
+                            <span class="button save-container">
+                        <span class="save-button"
+                              data-message="4138068|27|save&amp;f4a1c5c0ef651e90fbe9b7fa06999370df6713c958cbd4080f18af62573b97a5"
+                              data-disabled="false">
+        SAVE
+    </span>
+                </span>
+
+             <span class="button">
+                <i class="icon-envelope-alt email-button" data-source="tile" data-offer-id="4138068"></i>
+            </span>
+
+            <span class="button">
+                <i class="icon-mobile-phone sms-button" data-source="tile" data-offer-id="4138068"></i>
+            </span>
+                            </div>
+                        </div>
+
+                        <div class="content-tile tile grid_3 jump-tile omega">
+                            <div class="content">
+                                <p><a href="http://www.offers.com/c/fast-food/">View All Food Deals &amp; Freebies
+                                    Offers <i class="icon-angle-right"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!-- *****************************FOOTER ENDS**********************-->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
