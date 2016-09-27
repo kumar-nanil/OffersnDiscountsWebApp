@@ -5,7 +5,7 @@ app.config(function($routeProvider) {
             templateUrl : "../app/ondhome.html"
         })
         .when("/flipkart", {
-            templateUrl : "red.htm"
+            templateUrl : "../app/flipkart.html"
         })
         .when("/green", {
             templateUrl : "green.htm"
@@ -20,6 +20,14 @@ app.directive('topheader',function() {
         restrict : 'A',
         replace : true,
         templateUrl : "../app/topheader.html"
+    }
+});
+
+app.directive('mainnavigation',function() {
+    return {
+        restrict : 'A',
+        replace : true,
+        templateUrl : "../app/mainnavigation.html"
     }
 });
 

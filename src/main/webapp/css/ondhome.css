@@ -11,3 +11,27 @@
     width: 20px;
     height: 50px;
 }
+
+.carousel-slider {
+    display: block;
+    background-position: center;
+    cursor: pointer;
+    width: 2114.44px;
+    height: 300px;
+}
+
+.carousel-inner img {
+    margin: auto;
+    display: block;
+    max-width:auto;
+    max-height:auto;
+    width: auto;
+    height: 300px;
+}
+
+.offerImage {
+    width: 100%;
+    background: #ccc;
+    overflow: hidden;
+    position: relative;
+}

@@ -1,0 +1,106 @@
+<div ng-controller="FlipkartController as flipkart">
+    <div id="header">
+        <div topheader>
+        </div>
+        <div id="main">
+            <div id="filterable-header" class="has-filter">
+                <div class="container_12">
+                    <tr>
+                        <td>
+                            <div class="grid_9">
+                                <h1><strong>Flipkart </strong>Offers</h1>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="grid_3">
+                                <div id="header-logo">
+                                    <a target="_blank"
+                                       href="">
+                                        <img src="../image/flipkart.jpg " alt="View All Sears Coupons" class="">
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </div>
+            </div>
+            <div id="flipkartOffers" class="container">
+                <div class="offer-tile tile grid_3 offer-info alpha" data-offer-id="4273631"
+                     ng-repeat="offer in offersOfTheDay"
+                     ng-if="offer.category=='mobiles_and_accessories'">
+                    <div class="handle "></div>
+                    <div class="banner orange-banner ">hot</div>
+                    <!--<div class="dolphin sticker">-->
+                        <!--<p></p>-->
+
+                        <!--<p class="last">OFF</p>-->
+                    <!--</div>-->
+                    <div class="offer-image">
+                        <img class="offer-modal-link"
+                             src={{offer.imageUrls[1].url}}
+                             alt="20% off orders from Old Navy">
+                    </div>
+                    <div class="offer-info">
+                        <p class="company-line">
+                            From: <a title="Old Navy" href="/oldnavy/"><strong>{{offer.category}}</strong></a>
+                        </p>
+
+                        <p class="offer">
+                            <span class="offer-modal-link">{{offer.title}}</span>
+                            <!--<span class="offer-modal-link"><span class="savings">20% off</span> orders</span>-->
+                        </p>
+
+                        <div class="more-section clearfix">
+                        <span class="verified">{{offer.description}} </span>
+                        </div>
+                    </div>
+                    <div class="buy-section">
+                        <div class="alternate-pricing">
+                        </div>
+                        <div class="price-line clearfix">
+                        </div>
+                        <div class="buy">
+                            <div class="buy-button button-outer code " data-html="false" data-offerid="4273631"
+                                 data-printable="0" data-simple="0" data-single-use="0">
+                                <a rel="nofollow" target="_blank" class="track-position btn btn-green  code "
+                                   href="{{offer.url}}">
+                                    <div class="button-text" style="padding-right: 4%;">
+                                        Reveal Code
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="actions clearfix">-->
+                    <!--<span class="button save-container">-->
+                    <!--<span class="save-button"-->
+                          <!--data-message="4273631|27|save&amp;e56a96eebf53168f9a985834dbf654319c27bbdeb098d6503c470e489deed172"-->
+                          <!--data-disabled="false">-->
+                    <!--SAVE-->
+                    <!--</span>-->
+                    <!--</span>-->
+                    <!--<span class="button">-->
+                    <!--<i class="icon-envelope-alt email-button" data-source="tile" data-offer-id="4273631"></i>-->
+                    <!--</span>-->
+                    <!--<span class="button">-->
+                    <!--<i class="icon-mobile-phone sms-button" data-source="tile" data-offer-id="4273631"></i>-->
+                    <!--</span>-->
+                    <!--</div>-->
+                </div>
+
+                <!--<div class="row" ng-repeat="offer in flipkart.offersOfTheDay">-->
+                    <!--<div class="col-sm-4">-->
+                        <!--<div class="panel panel-primary">-->
+                            <!--<div class="panel-heading">{{offer.title}}</div>-->
+                            <!--<div class="panel-body">-->
+                                <!--<img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>-->
+                            <!--<div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+            <br><br>
+        </div>
+    </div>
+</div>
