@@ -14,7 +14,7 @@ import java.util.List;
  * Created by vdraj on 9/27/2016.
  */
 @Controller
-@RequestMapping(value = "/headCarousel")
+@RequestMapping(value = "/headcarousel")
 public class HeadCarouselController {
 
     @Autowired
