@@ -47,11 +47,20 @@
     <filter-class>com.ond.web.filter.CacheControlFilter</filter-class>
   </filter>
 
+
   <filter-mapping>
     <filter-name>SetCacheControl</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
 
+  <filter>
+    <filter-name>cors</filter-name>
+    <filter-class>com.ond.web.filter.CORSFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>cors</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
 </web-app>
 
 
