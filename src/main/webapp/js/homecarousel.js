@@ -4,7 +4,7 @@
 //Home Carousel Controller
 app.controller('HomeCarouselCtrl', function($scope,$http) {
     self.carousels = [{}];
-    $http.get("http://localhost:8080/service/headCarousel").then(function(response) {
+    $http.get("https://offersndiscounts-142723.appspot.com/service/headcarousel").then(function(response) {
         $scope.carousels = response.data;
         console.log(response.mainCarousels);
     })
