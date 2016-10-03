@@ -47,19 +47,19 @@
     <filter-class>com.ond.web.filter.CacheControlFilter</filter-class>
   </filter>
 
-
   <filter-mapping>
     <filter-name>SetCacheControl</filter-name>
-    <url-pattern>/*</url-pattern>
+    <servlet-name>ond</servlet-name>
   </filter-mapping>
 
   <filter>
-    <filter-name>cors</filter-name>
-    <filter-class>com.ond.web.filter.CORSFilter</filter-class>
+    <filter-name>CORS</filter-name>
+    <filter-class>com.thetransactioncompany.cors.CORSFilter</filter-class>
   </filter>
+
   <filter-mapping>
-    <filter-name>cors</filter-name>
-    <url-pattern>/*</url-pattern>
+    <filter-name>CORS</filter-name>
+    <servlet-name>ond</servlet-name>
   </filter-mapping>
 </web-app>
 

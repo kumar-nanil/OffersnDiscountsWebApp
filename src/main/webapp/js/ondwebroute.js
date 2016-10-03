@@ -23,11 +23,11 @@ app.directive('topheader',function() {
     }
 });
 
-app.directive('mainnavigation',function() {
+app.directive('homebody',function() {
     return {
         restrict : 'A',
         replace : true,
-        templateUrl : "../app/mainnavigation.html"
+        templateUrl : "../app/homebody.html"
     }
 });
 
@@ -54,4 +54,3 @@ app.directive('footer',function() {
         templateUrl : "../app/footer.html"
     }
 });
-

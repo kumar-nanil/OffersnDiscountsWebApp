@@ -1,26 +1,18 @@
-<div id="homepage-carousel" class="carousel slide" data-ride="carousel" ng-controller="HomeCarouselCtrl as homeCarousel">
-    <!-- Indicators for dot nav -->
-    <ol class="carousel-indicators">
-        <li data-target="app/headercarousel.html#homepage-carousel" ng-repeat="n in carousels"
-            data-slide-to="$index" ng-class="{active:isActive(!$index)}"></li>
-    </ol>
-
-    <!-- Slide items -->
-    <div class="carousel-inner" role="listbox">
-        <div class="carousel-slider item" ng-class="{active:!$index}" ng-repeat="carousel in carousels">
-            <img src="{{carousel.imageSrc}}" alt="{{carousel.imageAlt}}">
-        </div>
-    </div>
-
-    <!-- Controls for Next and Prev -->
-    <a class="left carousel-control" href="app/headercarousel.html#homepage-carousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="app/headercarousel.html#homepage-carousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-
-
+<div class="slider">
+    <ul class="slides">
+        <li>
+            <img src="https://rukminim1.flixcart.com/flap/3376/560/brand/5286622f22a027feb0678d00bd3f5796332000763224131840.jpg?q=50"> <!-- random image -->
+            <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+        </li>
+        <li>
+            <img src="https://i1.sdlcdn.com/img/platinum09/432.jpg"> <!-- random image -->
+            <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+        </li>
+    </ul>
 </div>

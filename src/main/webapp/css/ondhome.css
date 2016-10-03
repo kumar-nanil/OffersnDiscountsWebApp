@@ -1,37 +1,6 @@
-.handpicked-img {
-    display: block;
-    max-width:230px;
-    max-height:95px;
-    width: 100px;
-    height: 60px;
-}
-
-.love-img {
-    display: block;
-    width: 20px;
-    height: 50px;
-}
-
-.carousel-slider {
-    display: block;
-    background-position: center;
-    cursor: pointer;
-    width: 2114.44px;
-    height: 300px;
-}
-
-.carousel-inner img {
-    margin: auto;
-    display: block;
-    max-width:auto;
-    max-height:auto;
-    width: auto;
-    height: 300px;
-}
-
-.offerImage {
-    width: 100%;
-    background: #ccc;
-    overflow: hidden;
-    position: relative;
+h1, h2, h3, h4, h5, h6 {
+    color: #FFFFFF;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 300;
+    margin: 0 0 .25em 0
 }

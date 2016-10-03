@@ -2,14 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Offers n Discounts</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/base.css" media="all">
-    <link rel="stylesheet" type="text/css" href="css/homepage.css" media="all">
-    <link rel="stylesheet" type="text/css" href="css/ondhome.css" media="all">
-    <link rel="stylesheet" type="text/css" href="css/merchant.css" media="all">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/ondhome.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
 
@@ -19,18 +24,20 @@
 
 <script src="js/angular.js"></script>
 <script src="js/angular-route.js"></script>
-<script src="js/ondwebroute.js"></script>
-<script src="js/offerset.js"></script>
-<script src="js/flipkart.js"></script>
-<script src="js/homecarousel.js"></script>
+<!--Import jQuery before materialize.js-->
 <script src="js/jquery.min.js"></script>
 <!--&lt;!&ndash; Include all compiled plugins (below), or include individual files as needed &ndash;&gt;-->
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('.carousel').carousel({
-            interval: 200
-        })
+<script src="js/materialize.min.js"></script>
+<script src="js/aditya.js"></script>
+<script src="js/ondwebroute.js"></script>
+<script src="js/flipkart.js"></script>
+<script src="js/homecarousel.js"></script>
+<script src="js/homebody.js"></script>
+<script src="js/ondhomeoffers.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.slider').slider({full_width: true});
     });
 </script>
 </body>
