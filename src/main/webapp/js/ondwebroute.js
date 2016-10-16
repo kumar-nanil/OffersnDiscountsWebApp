@@ -2,7 +2,7 @@ var app = angular.module("myApp", ["ngRoute"]);
 app.config(function($routeProvider) {
     $routeProvider
         .when("/", {
-            templateUrl : "../app/ondhome.html"
+            templateUrl : "app/ondhome.html"
         })
         .when("/flipkart", {
             templateUrl : "../app/flipkart.html"
@@ -39,18 +39,18 @@ app.directive('headercarousel',function() {
     }
 });
 
-app.directive('handpickedoffers',function() {
-    return {
-        restrict : 'A',
-        replace : true,
-        templateUrl : "../app/handpickedoffers.html"
-    }
-});
-
-app.directive('footer',function() {
-    return {
-        restrict : 'A',
-        replace : true,
-        templateUrl : "../app/footer.html"
-    }
-});
+//app.directive('handpickedoffers',function() {
+//    return {
+//        restrict : 'A',
+//        replace : true,
+//        templateUrl : "../app/handpickedoffers.html"
+//    }
+//});
+//
+//app.directive('footer',function() {
+//    return {
+//        restrict : 'A',
+//        replace : true,
+//        templateUrl : "../app/footer.html"
+//    }
+//});

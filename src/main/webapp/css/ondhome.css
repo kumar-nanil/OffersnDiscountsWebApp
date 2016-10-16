@@ -1,6 +1,38 @@
 h1, h2, h3, h4, h5, h6 {
-    color: #FFFFFF;
+    color: #28394c;
+    -webkit-font-smoothing: antialiased;
     font-family: 'Open Sans', Arial, sans-serif;
     font-weight: 300;
+    font-size: 25px;
     margin: 0 0 .25em 0
+}
+
+h3 {
+    line-height: 35px;
+}
+
+.header {
+    color: #212121;
+    font-weight: 300;
+}
+
+.carousel-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1500px;
+}
+
+#slides_control > div{
+    height: 200px;
+}
+/*img{*/
+    /*margin:auto;*/
+    /*width: 400px;*/
+/*}*/
+#slides_control {
+    position:absolute;
+    width: 400px;
+    left:50%;
+    top:20px;
+    margin-left:-200px;
 }

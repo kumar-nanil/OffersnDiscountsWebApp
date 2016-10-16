@@ -1,18 +1,12 @@
-<div class="slider">
-    <ul class="slides">
-        <li>
-            <img src="https://rukminim1.flixcart.com/flap/3376/560/brand/5286622f22a027feb0678d00bd3f5796332000763224131840.jpg?q=50"> <!-- random image -->
-            <div class="caption center-align">
-                <h3>This is our big Tagline!</h3>
-                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-            </div>
-        </li>
-        <li>
-            <img src="https://i1.sdlcdn.com/img/platinum09/432.jpg"> <!-- random image -->
-            <div class="caption center-align">
-                <h3>This is our big Tagline!</h3>
-                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-            </div>
-        </li>
-    </ul>
+<div class="carousel-container s12 m8 l10" ng-controller="HomeCarouselCtrl as ctrl">
+    <div class="slider">
+        <ul class="slides">
+            <li  ng-repeat="carousel in carousels">
+                <a href="{{carousel.imageUrl}}">
+                    <img src="{{carousel.imageSrc}}" alt="{{carousel.imageAlt}}">
+                </a>
+            </li>
+        </ul>
+    </div>
+    {{ sliderInitialization() }}
 </div>

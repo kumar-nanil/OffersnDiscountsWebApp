@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Aditya</title>
+    <title>Offers 'n' Discounts</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
@@ -16,11 +16,8 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-<body>
-<div ng-app="myApp">
-    <div ng-view></div>
-</div>
-
+<body ng-app="myApp">
+<div ng-view></div>
 <script src="js/angular.js"></script>
 <script src="js/angular-route.js"></script>
 
@@ -29,225 +26,125 @@
         <div class="container">
             <div class="nav-wrapper ">
                 <a href="#" class="brand-logo"><b>Offers n Discounts</b></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="badges.html">Flipkart's Offer</a></li>
-                    <li><a href="badges.html">Snapdeal Offer</a></li>
-                    <li><a href="collapsible.html">About Us</a></li>
-                </ul>
+                <!--<ul id="nav-mobile" class="right hide-on-med-and-down">-->
+                    <!--<li><a href="home.html">Home</a></li>-->
+                    <!--<li><a href="badges.html">Flipkart's Offer</a></li>-->
+                    <!--<li><a href="badges.html">Snapdeal Offer</a></li>-->
+                    <!--<li><a href="collapsible.html">About Us</a></li>-->
+                <!--</ul>-->
             </div>
         </div>
     </nav>
 </div>
-
-<div class="carousel-container">
+<!--<div ng-controller="HomeCarouselCtrl as c">-->
+    <!--<carousel interval="myInterval">-->
+        <!--<slide ng-repeat="carousel in carousels" active="carousel.active">-->
+            <!--<img ng-src="{{carousel.imageSrc}}">-->
+            <!--<div class="carousel-caption">-->
+                <!--<h4>Slide {{$index+1}}</h4>-->
+            <!--</div>-->
+        <!--</slide>-->
+    <!--</carousel>-->
+<!--</div>-->
+<div class="carousel-container s12 m8 l10">
     <div class="slider">
         <ul class="slides">
             <li>
-                <img src="https://rukminim1.flixcart.com/flap/3376/560/brand/5286622f22a027feb0678d00bd3f5796332000763224131840.jpg?q=50"> <!-- random image -->
-                <div class="caption center-align">
-                    <!--<h3>This is our big Tagline!</h3>-->
-                    <!--<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>-->
-                </div>
+                <a href="https://dl.flipkart.com/dl/mobiles/~apple-iphone7-and-iphone-7plus/pr?sid=tyy,4io">
+                    <img src="http://i.imgur.com/KIKna6t.jpg" alt="iPhone 7 and 7 Plus">
+                </a>
             </li>
             <li>
-                <img src="https://i1.sdlcdn.com/img/platinum09/432.jpg"> <!-- random image -->
-                <div class="caption left-align">
-                    <!--<h3>Left Aligned Caption</h3>-->
-                    <!--<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>-->
-                </div>
+                <a href="https://www.snapdeal.com/offers/diwali-fashion">
+                    <img src="https://n2.sdlcdn.com/imgs/c/5/r/fashion4oct14thocct-4d29f.jpg" alt="Snapdeal Offer Fashion Diwali">
+                </a>
             </li>
             <li>
-                <img src="http://g-ecx.images-amazon.com/images/G/31/img16/TV/AppliancesSep/4500x900_02._UX1500_SX1500_CB279073509_.jpg"> <!-- random image -->
-                <div class="caption right-align">
-                    <!--<h3>Right Aligned Caption</h3>-->
-                    <!--<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>-->
-                </div>
-            </li>
-            <li>
-                <img src="http://g-ecx.images-amazon.com/images/G/31/img16/watches/bunk/PremWatches/SUPER_HD-watches-22-jpg._UX1500_SX1500_CB278972506_.jpg"> <!-- random image -->
-                <div class="caption center-align">
-                    <!--<h3>This is our big Tagline!</h3>-->
-                    <!--<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>-->
-                </div>
+                <a href="http://www.amazon.in/s/ref=s9_acss_bw_cg_WLME_1a1?_encoding=UTF8&hidden-keywords=B01DDP83FM%7C%20B01FM7GG58%7C%20B01FM7GGFI%7C%20B01DDP7D6W&url=search-alias%3Daps&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=desktop-hero-B&pf_rd_s=merchandised-search-6&pf_rd_r=0KMMVAANP5FPT50P64AH&pf_rd_r=2J3PW207K6KH3PGMM55R&pf_rd_t=Gateway&pf_rd_t=101&pf_rd_p=f37130b7-2225-4a22-b6d9-7efc66345c38&pf_rd_p=1009029307&pf_rd_i=desktop&pf_rd_i=10726415031">
+                    <img src="http://g-ecx.images-amazon.com/images/G/31/img16/Wireless/Jupiter/day3refresh/PC/GW_4500x900_samsung-pro-art_1._UX1500_SX1500_CB276855877_.jpg" alt="Samsung Offer Amazon">
+                </a>
             </li>
         </ul>
     </div>
 </div>
 <br><br>
 
-<div class="container" ng-controller="FlipkartController as flipkart">
-    <div class="row" ng-repeat="offer in offersOfTheDay">
-        <div class="col s12 m3">
+<div class="container">
+    <h3>Mobiles</h3>
+    <div class="row">
+        <div class="col s12 m6 l3">
             <div class="card">
                 <div class="card-image">
-                    <img src="{{offer.imageUrls[1].url}}">
-                    <span class="card-title">Card Title</span>
+                    <img class="hoverZoomLink" src="https://rukminim1.flixcart.com/image/312/312/mobile/b/w/8/apple-iphone-7-plus-na-original-imaemz66cs4pbabk.jpeg?q=70" alt="Apple iPhone 7 Plus (Gold, 256 GB)">
                 </div>
                 <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col s12 m3">
-            <div class="card">
-                <div class="card-image">
-                    <img width="250px" height="250px" src="http://img.fkcdn.com/image/two-wheeler-cover/s/n/z/activa01-retina-original-imaehb6zbckxv7bb.jpeg">
-                    <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col s12 m3">
-            <div class="card">
-                <div class="card-image">
-                    <img src="http://img.fkcdn.com/image/two-wheeler-cover/s/n/z/activa01-retina-original-imaehb6zbckxv7bb.jpeg">
-                    <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col s12 m3">
-            <div class="card">
-                <div class="card-image">
-                    <img src="http://img.fkcdn.com/image/two-wheeler-cover/s/n/z/activa01-retina-original-imaehb6zbckxv7bb.jpeg">
-                    <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col s12 m3">
-            <div class="card">
-                <div class="card-image">
-                    <img src="http://img.fkcdn.com/image/two-wheeler-cover/s/n/z/activa01-retina-original-imaehb6zbckxv7bb.jpeg">
-                    <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col s12 m3">
-            <div class="card">
-                <div class="card-image">
-                    <img src="http://img.fkcdn.com/image/two-wheeler-cover/s/n/z/activa01-retina-original-imaehb6zbckxv7bb.jpeg">
-                    <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col s12 m3">
-            <div class="card">
-                <div class="card-image">
-                    <img src="http://img.fkcdn.com/image/two-wheeler-cover/s/n/z/activa01-retina-original-imaehb6zbckxv7bb.jpeg">
-                    <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col s12 m3">
-            <div class="card">
-                <div class="card-image">
-                    <img src="http://img.fkcdn.com/image/two-wheeler-cover/s/n/z/activa01-retina-original-imaehb6zbckxv7bb.jpeg">
-                    <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col s12 m3">
-            <div class="card">
-                <div class="card-image">
-                    <img src="http://img.fkcdn.com/image/two-wheeler-cover/s/n/z/activa01-retina-original-imaehb6zbckxv7bb.jpeg">
-                    <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
+                    <p>Title : Apple iPhone 7 Plus (Gold, 256 GB)</p>
+                    <p>Price : ₹92,000</p>
+                    <p>EMI from ₹4,461</p>
                 </div>
                 <div class="card-action center">
-                    <a class="waves-effect waves-light btn">button</a>
+                    <a href="https://www.flipkart.com/apple-iphone-7-black-256-gb/p/itmen6das2kghbqf?pid=MOBEMK62MBVHSRWV&srno=b_1_1&otracker=browse&lid=LSTMOBEMK62MBVHSRWVVO4HWB" class="waves-effect waves-light btn">BUY NOW</a>
                 </div>
             </div>
         </div>
-
-
+        <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image">
+                    <img class="materialboxed" src="https://rukminim1.flixcart.com/image/312/312/mobile/7/e/e/apple-iphone-7-na-original-imaemzee435f9gpu.jpeg?q=70" alt="Apple iPhone 7 (Black, 256 GB)">
+                </div>
+                <div class="card-content">
+                    <p>Title : Apple iPhone 7 (Black, 256 GB)</p>
+                    <p>Price : ₹80,000</p>
+                    <p>EMI from ₹3,879</p>
+                </div>
+                <div class="card-action center">
+                    <a href="https://www.flipkart.com/apple-iphone-7-black-256-gb/p/itmen6das2kghbqf?pid=MOBEMK62MBVHSRWV&srno=b_1_1&otracker=browse&lid=LSTMOBEMK62MBVHSRWVVO4HWB" class="waves-effect waves-light btn">BUY NOW</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image">
+                    <img class="materialboxed" src="https://rukminim1.flixcart.com/image/832/832/mobile/b/u/z/apple-iphone-7-na-original-imaemzeufk3cfuwz.jpeg?q=70" alt="Apple iPhone 7 (Silver, 128 GB)">
+                </div>
+                <div class="card-content">
+                    <p>Title : Apple iPhone 7 (Silver, 128 GB)</p>
+                    <p>Price : ₹70,000</p>
+                    <p>EMIs from ₹3,395</p>
+                </div>
+                <div class="card-action center">
+                    <a href="https://www.flipkart.com/apple-iphone-7-black-256-gb/p/itmen6das2kghbqf?pid=MOBEMK62MBVHSRWV&srno=b_1_1&otracker=browse&lid=LSTMOBEMK62MBVHSRWVVO4HWB" class="waves-effect waves-light btn">BUY NOW</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image">
+                    <img class="materialboxed" src="https://rukminim1.flixcart.com/image/312/312/mobile/e/y/z/apple-iphone-7-na-original-imaemzftxjqwsttw.jpeg?q=70" alt="Apple iPhone 7 (Rose Gold, 32 GB)">
+                    <!--<span class="card-title">Apple iPhone 7 (Rose Gold, 32 GB)</span>-->
+                </div>
+                <div class="card-content">
+                    <p>Title : Apple iPhone 7 (Rose Gold, 32 GB)</p>
+                    <p>Price : ₹60,000</p>
+                    <p>EMIs from ₹2,910</p>
+                </div>
+                <div class="card-action center">
+                    <a href="https://www.flipkart.com/apple-iphone-7-rose-gold-32-gb/p/itmen6dapsvxanrk?pid=MOBEMK62JSRHU85T&srno=b_1_4&otracker=browse&lid=LSTMOBEMK62JSRHU85TBROX07" class="waves-effect waves-light btn">BUY NOW</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-
-<footer class="page-footer #ff1744 red accent-3 z-depth-3">
-    <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
-                    content.</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="footer-copyright">
-        <div class="container">
-            © 2016 Copyright
-            <a class="grey-text text-lighten-4 right" href="#!">Made with </a>
-        </div>
-    </div>
-</footer>
+<div footer></div>
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.js"></script>
 <script type="text/javascript" src="js/aditya.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--<script src="js/ondwebroute.js"></script>-->
+<script src="js/flipkart.js"></script>
+<script src="js/homecarousel.js"></script>
+<script src="js/homebody.js"></script>
 </body>
 </html>

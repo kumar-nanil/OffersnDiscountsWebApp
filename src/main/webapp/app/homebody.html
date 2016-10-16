@@ -1,19 +1,29 @@
-<div class="container" ng-controller="HomeBodyController as home">
-    <div class="row" ng-repeat="i in offers">
-        <h3>{{i.category}}</h3>
-        <div class="col s12 m3" ng-repeat="n in i.offer">
-            <div class="card">
-                <div class="card-image">
-                    <img width="250" height="350" ng-src="{{n.imageSrc}}" alt="{{n.imageAlt}}">
-                    <!--<span class="card-title">Card Title</span>-->
+<div>
+    <div ng-include='"app/headercarousel.html"'></div>
+
+    <div class="container" ng-controller="HomeBodyController as home">
+
+        <div ng-repeat="i in categoryoffers">
+            <h3>{{i.category}}</h3>
+
+            <div class="row">
+                <div class="col s12 m6 l3" ng-repeat="n in i.offer">
+                    <div class="card large">
+                        <div class="card-image">
+                            <img height="350px" class="materialboxed" ng-src="{{n.imageSrc}}" alt="{{n.imageAlt}}">
+                        </div>
+                        <div class="card-content">
+                            <a href="{{n.linkUrl}}"><h5><p>{{n.title}}</p></h5></a>
+                            <a href="{{n.linkUrl}}"><h6><p>{{n.description}}</p></h6></a>
+                        </div>
+                        <div class="card-action center">
+                            <a href="{{n.linkUrl}}" class="waves-effect waves-light btn">Get Offer</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <p>Description {{n.description}}</p>
-                </div>
-                <div class="card-action center">
-                    <a class="waves-effect waves-light btn">button</a>
-                </div>
+                <div class="fa fa-angle-right"></div>
             </div>
         </div>
+        {{ homebody() }}
     </div>
 </div>
